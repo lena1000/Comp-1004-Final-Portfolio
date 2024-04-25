@@ -1,0 +1,406 @@
+/*************************************** background styling **********************************************/
+body {
+    /*background-image: linear-gradient(to top, #3f97fc 0%, #d0f4ff 100%);*/
+    background: #181818;
+    margin: 0px 0.9rem;
+    padding-left: 20px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/************************************** Navigation bar styling ******************************************/
+.navbar {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    z-index: 999;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px 0px;
+    font-family: 'Rockwell', serif;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__logo {
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 42px;
+    font-family: 'Impact', serif;
+    padding: 17px;
+    margin-left: -55px;
+}
+
+.navbar__links {
+    color: #348F50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar__links:hover {
+    color: #56B4D3;
+    transition: all 0.3s ease;
+}
+
+/***************************************** Manager page styling ****************************************/
+.manager__container h1 {
+    font-family: 'Rockwell', serif;
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4px;
+}
+
+.manager__container h2 {
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 38px;
+    margin-top: 45px;
+    margin-bottom: 39px;
+}
+
+table {
+    border: 1.2px solid #56B4D3; /* fallback for old browsers */
+    border: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    border: linear-gradient(to right, #56B4D3, #348F50); 
+    -webkit-border-clip: border-box;
+    -moz-border-clip: border-box;
+    -webkit-border-box-fill-color: transparent;
+    -moz-border-box-fill-color: transparent;
+}
+
+th {
+    font-size: 27px;
+    padding: 7px 14px;
+    color: #ffffff;
+}
+
+td {
+    font-size: 25px;
+    padding: 5px 14px;
+    color: #ffffff;
+}
+
+.download__btn {
+    font-size: 25px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}
+
+.upload__btn {
+    font-size: 25px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}
+
+/***************************************** New Passwords page styling *****************************************/
+.add__container h1 {
+    font-family: 'Rockwell', serif;
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4px;
+}
+
+.add__container h2 { 
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 38px;
+    margin-top: 45px;
+    margin-bottom: 39px;
+}
+
+.add__display input {
+    outline: none;
+    padding: 15px 11px;
+    border-radius: 4px;
+    border: none;
+    font-size: 23px; 
+    background: #ffffff; 
+    z-index: 3;
+}
+
+.strength__value {
+    font-size: 30px;
+    font-family: 'Rockwell', serif;
+    color: white;
+    height: 30px;
+}
+
+.add__btn {
+    font-size: 25px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}
+
+.add__display p {
+    font-size: 30px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}
+
+/****************************************** Strength page styling *******************************************/
+.strength__container h1 {
+    font-family: 'Rockwell', serif;
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4px;
+}
+
+.strength__container h2 { 
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 38px;
+    margin-top: 45px;
+    margin-bottom: 39px;
+}
+
+.strength__input {
+    width: 30%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #ffffff;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 26px 20px;
+    justify-content: space-between;
+}
+
+.strength__input input {
+    outline: none;
+    border: none;
+    font-size: 24px; 
+    width: 100%;
+    background: #ffffff; 
+}
+
+.strength__indicator {
+    position: absolute;
+    background: #fff;
+    height: 4px;
+    width: 487px;
+    margin-top: -1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.Weak .password__strength::before {
+    width:10%;
+    background: red;
+}
+
+.strength__btn {
+    font-size: 27px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+    margin-top: 35px;
+}
+
+.strength__display p {
+    color: #ffffff;
+    font-family: 'Rockwell', serif;
+    font-size: 30px;
+}
+
+/****************************************** Generator page styling *******************************************/
+.generator__container h1 {
+    font-family: 'Rockwell', serif;
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4px;
+}
+
+.generator__container h2 { 
+    color:#ffffff;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 38px;
+    margin-top: 45px;
+    margin-bottom: 39px;
+}
+
+.generator__display {
+    width: 30%;
+    border-radius: 5px;
+    background: #ffffff;
+    margin: 32px 0px;
+    display: flex;
+    align-items: center;
+    padding: 26px 20px;
+    justify-content: space-between;
+}
+
+.generator__display input {
+    outline: none;
+    border: none;
+    font-size: 24px; 
+    width: 100%;
+    background: #ffffff; 
+}
+
+.generate__extras {
+    color: #ffffff;
+    font-family: 'Rockwell', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.generate__extras p {
+    margin-left: 28.7rem;
+    margin-top: -2.15rem;
+}
+
+.generate__btn {
+    font-size: 27px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}
+
+.copy__btn {
+    margin-left: 25px;
+    font-size: 27px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50); 
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    padding: 15px 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Rockwell', serif;
+    color: white;
+}

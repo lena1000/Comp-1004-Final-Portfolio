@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link>
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+</head>
+<body>
+    <!---------------------------------------------------- Navigation bar section --------------------------------------------------------->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo"><ion-icon name="lock-closed-outline"></ion-icon>PassLock</div>
+            <ul class="navbar__menu">
+                <li class="navbar__links">
+                    <a onclick='showPasswords()' class="Passwords__link">Your Passwords</a>
+                </li>
+                <li class="navbar__links">
+                    <a onclick='showAddPass()' class="Add__link">Add Password</a>
+                </li>
+                <li class="navbar__links">
+                    <a onclick='showStrength()' class="Strength__link">Password Strength</a>
+                </li>
+                <li class="navbar__links">
+                    <a onclick='showGenerate()' class="Generator__link">Generator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <!------------------------------------------------- Password Manager section ----------------------------------------------->
+        <div class="manager__container" id="manager__container">
+            <h1>Your personal Password Manager</h1>
+            <h2>Your Passwords:</h2> <!--Making table for already existing passwords-->
+            <table id="InfoTable">
+                <thead> <!--table Headings-->
+                    <tr> <!--New row-->
+                        <th> Website </th> 
+                        <th> Username </th> 
+                        <th> Password </th> 
+                    </tr>
+                </thead>
+                <tbody id="tableContent"> <!--table content-->
+                    <tr id="DefaultText"> <!--New row-->
+                        <td></td>
+                        <td> No information is currently saved. </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="download__btn" onclick="DownloadFile()">Download</button>
+            <button class="upload__btn" onclick="UploadFile()">Upload</button>
+        </div>
+
+        <!---------------------------------------------- Add New Password section ---------------------------------------------->
+        <div class="add__container" id="add__container" style = "display: none">
+            <h1>Add New Passwords</h1>
+            <h2>Please input new information:</h2>
+            <div class="add__display">
+                <input type="text" id="website" placeholder="Website"/> </br></br>
+                <input type="text" id="username" placeholder="Username"/> </br></br>
+                <input type="text" id="password" placeholder="Password"/> </br>
+                <button onclick='addToTable()' class="add__btn">Add to Table</button>
+                <p id="AddInfoPara"></p>
+            </div>
+        </div>
+
+        <!-------------------------------------------- Password Strength section ---------------------------------------------> 
+        <div class="strength__container" id="strength__container" style = "display: none">
+            <h1>Check your Password Strength</h1>
+            <h2>Please input your Password:</h2>
+            <div class="strength__display">
+                <div class="strength__input">
+                    <input type="text" id="StrengthBox" placeholder="Password"> </br>
+                </div>
+                <div class="strength__indicator"></div>
+                <button onclick='CheckStrength()' class="strength__btn">Check Strength</button>
+                <p id="StrengthPara"><span class="strength" id="strength"></span></p>
+            </div>
+        </div>
+
+        <!-------------------------------------------- Password Generator section ---------------------------------------------> 
+        <div class="generator__container" id="generator__container" style = "display: none">
+            <h1>Password Generator</h1>
+            <h2>Generate a Random Password:</h2>
+            <div class="generator__display">
+                <input type="text" id="GeneratedBox" placeholder="Password"> </br>
+            </div>
+            <div class="generate__extras">
+                <label for="generate__range">Number of Characters:</label>
+                <input id="generate__range" type="range" value="12" min="8" max="25" onclick="RangeNr()"></input>
+                <p id="range__value"></p> 
+            </div>
+            <button onclick='createPassword()' class="generate__btn">Generate</button>
+            <button onclick='copyPassword()' class="copy__btn">Copy</button>
+        </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Using online icons-->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
